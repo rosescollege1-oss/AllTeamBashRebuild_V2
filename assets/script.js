@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const path=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('.nav-links a').forEach(a=>{const href=a.getAttribute('href'); if(href===path||href===location.pathname) a.classList.add('active')});});
